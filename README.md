@@ -82,7 +82,10 @@ The notebook includes the following sections:
 * [Matplotlib](https://matplotlib.org/) - For visualizing data.
 * [Jupyter Notebook](https://jupyter.org/) - For running and documenting Python code interactively.
 
-Include all items used to build project.
+## 📊 Results & Analysis
+![Performance across latent features](result.png)
+*Figure: Performance across different latent features.*
+
 
 ----
 ## 🙏 Acknowledgment
