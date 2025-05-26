@@ -61,22 +61,19 @@ The notebook includes the following sections:
 - **Content-Based Recommendations** – Recommend articles based on clustering (e.g., KMeans).
 - **Matrix Factorization (SVD)** – Use latent features to compute similarity.
 - **Extras & Conclusion** – Build hybrid recommenders and polish results.
-
-
+----
 ## Built With
 
-## Built With
-
-* [Pandas](https://pandas.pydata.org/) - For data manipulation and analysis.
-* [NumPy](https://numpy.org/) - For numerical computing.
-* [scikit-learn](https://scikit-learn.org/) - For clustering, machine learning, dimensionality reduction, and evaluation metrics, including:
+* [Pandas](https://pypi.org/project/pandas/) - For data manipulation and analysis.
+* [NumPy]([https://numpy.org/](https://pypi.org/project/numpy/)) - For numerical computing.
+* [scikit-learn](https://scikit-learn.org/stable/modules/clustering.html) - For clustering, machine learning, dimensionality reduction, and evaluation metrics, including:
  * [cosine_similarity](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html) - to measure similarity between items.
-  *  [KMeans](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans)- for clustering articles.
-  * [TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html#sklearn.feature_extraction.text.TfidfVectorizer) - to convert text data into numerical features.
-  * `make_pipeline` - to build ML pipelines.
-  * `Normalizer` - to normalize data.
-  * `TruncatedSVD` - for dimensionality reduction.
-  * `precision_score`, `recall_score`, `accuracy_score` - for evaluating model performance.
+ * [KMeans](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans)- for clustering articles.
+ * [TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html#sklearn.feature_extraction.text.TfidfVectorizer) - to convert text data into numerical features.
+  * [make_pipeline](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html) - to build ML pipelines.
+  * [Normalizer](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.Normalizer.html) - to normalize data.
+  * [TruncatedSVD](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html) - for dimensionality reduction.
+  * [model_evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html)- for evaluating model performance.
 * [Matplotlib](https://matplotlib.org/) - For visualizing data.
 * [Jupyter Notebook](https://jupyter.org/) - For running and documenting Python code interactively.
 
