@@ -1,55 +1,93 @@
-# README Template
+# 📚 Project: Recommendation System for IBM Community
 
-Below is a template provided for use when building your README file for students.
+This project focuses on building a **Recommendation System** using real interaction data from IBM's Watson Studio platform. The goal is to recommend articles to users based on their past behavior and similarities between articles or users.
 
-# Project Title
+## 💡 Project Overview
 
-Project description goes here.
+The recommendation system aims to answer the following questions:
+- Which articles are most popular overall?
+- What should we recommend to a new user?
+- What should we recommend to a returning user based on their reading history?
+- Can we find users that are most similar to a given user?
 
-## Getting Started
+## 🚀 Getting Started
 
-Instructions for how to get a copy of the project running on your local machine.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Dependencies
-
+### 📦 Dependencies
+Make sure you have the following Python libraries installed:
 ```
-Examples here
+pandas
+numpy
+sklearn
+matplotlib
+seaborn
+scipy
 ```
 
 ### Installation
 
-Step by step explanation of how to get a dev environment running.
-
-List out the steps
+1- Clone the repository:
 
 ```
-Give an example here
+git clone url
+cd Project-Recommendation-System
 ```
+2- Open the notebook file in Jupyter Notebook or Jupyter Lab 
 
+```
+jupyter notebook Recommendations_with_IBM.ipynb
+```
 ## Testing
 
-Explain the steps needed to run any automated tests
+Some tests are included in the notebook using assertion checks to verify correct implementation of key functions.
 
-### Break Down Tests
+# 🔍 Breakdown of Tests
+User-User Similarity Tests – Check if the most similar users are correctly identified.
 
-Explain what each test does and why
+Recommendations Tests – Ensure that recommended article IDs match expectations.
 
-```
-Examples here
-```
+Cluster Assignments – Verify that articles are correctly mapped to clusters.
 
-## Project Instructions
+Submission Check – Export notebook and ensure outputs are correctly formatted.
 
-This section should contain all the student deliverables for this project.
+## 📌 Project Instructions
+
+The notebook includes the following sections:
+
+- **Exploratory Data Analysis** – Understand the structure of the user-item interactions.
+- **Rank-Based Recommendations** – Recommend articles based on popularity.
+- **User-User Based Collaborative Filtering** – Recommend articles based on similar users.
+- **Content-Based Recommendations** – Recommend articles based on clustering (e.g., KMeans).
+- **Matrix Factorization (SVD)** – Use latent features to compute similarity.
+- **Extras & Conclusion** – Build hybrid recommenders and polish results.
+
 
 ## Built With
 
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
+## Built With
+
+* [Pandas](https://pandas.pydata.org/) - For data manipulation and analysis.
+* [NumPy](https://numpy.org/) - For numerical computing.
+* [scikit-learn](https://scikit-learn.org/) - For clustering, machine learning, dimensionality reduction, and evaluation metrics, including:
+ * [cosine_similarity](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html) - to measure similarity between items.
+  *  [KMeans](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans)- for clustering articles.
+  * [TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html#sklearn.feature_extraction.text.TfidfVectorizer) - to convert text data into numerical features.
+  * `make_pipeline` - to build ML pipelines.
+  * `Normalizer` - to normalize data.
+  * `TruncatedSVD` - for dimensionality reduction.
+  * `precision_score`, `recall_score`, `accuracy_score` - for evaluating model performance.
+* [Matplotlib](https://matplotlib.org/) - For visualizing data.
+* [Jupyter Notebook](https://jupyter.org/) - For running and documenting Python code interactively.
 
 Include all items used to build project.
 
+----
+## 🙏 Acknowledgment
+
+Thanks to **Udacity** for providing this project as part of the **Data Scientist Nanodegree** program.
+
+----
 ## License
 
 [License](LICENSE.txt)
