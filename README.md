@@ -2,6 +2,7 @@
 
 This project focuses on building a **Recommendation System** using real interaction data from IBM's Watson Studio platform. The goal is to recommend articles to users based on their past behavior and similarities between articles or users.
 
+----
 ## 💡 Project Overview
 
 The recommendation system aims to answer the following questions:
@@ -10,10 +11,12 @@ The recommendation system aims to answer the following questions:
 - What should we recommend to a returning user based on their reading history?
 - Can we find users that are most similar to a given user?
 
+----
 ## 🚀 Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+----
 ### 📦 Dependencies
 Make sure you have the following Python libraries installed:
 ```
@@ -24,7 +27,7 @@ matplotlib
 seaborn
 scipy
 ```
-
+----
 ### Installation
 
 1- Clone the repository:
@@ -38,11 +41,12 @@ cd Project-Recommendation-System
 ```
 jupyter notebook Recommendations_with_IBM.ipynb
 ```
+----
 ## Testing
 
 Some tests are included in the notebook using assertion checks to verify correct implementation of key functions.
 
-# 🔍 Breakdown of Tests
+- 🔍 Breakdown of Tests
 User-User Similarity Tests – Check if the most similar users are correctly identified.
 
 Recommendations Tests – Ensure that recommended article IDs match expectations.
@@ -51,6 +55,7 @@ Cluster Assignments – Verify that articles are correctly mapped to clusters.
 
 Submission Check – Export notebook and ensure outputs are correctly formatted.
 
+----
 ## 📌 Project Instructions
 
 The notebook includes the following sections:
