@@ -83,9 +83,11 @@ The notebook includes the following sections:
 * [Jupyter Notebook](https://jupyter.org/) - For running and documenting Python code interactively.
 
 ## 📊 Results & Analysis
-![Performance across latent features](result.png)
-*Figure: Performance across different latent features.*
+<p align="center">
+  <img src="result.png" alt="Performance across latent features" width="600"/>
+</p>
 
+<p align="center"><em>Figure: Performance across different latent features.</em></p>
 
 ----
 ## 🙏 Acknowledgment
